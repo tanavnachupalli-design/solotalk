@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talkora - Book Your Session</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <h1>Book Your Session</h1>
+            <div class="pricing">
+                <div class="plan">
+                    <h3>15 Minutes</h3>
+                    <p>₹99</p>
+                    <button onclick="selectPlan(15, 99)">Select</button>
+                </div>
+                <div class="plan">
+                    <h3>30 Minutes</h3>
+                    <p>₹149</p>
+                    <button onclick="selectPlan(30, 149)">Select</button>
+                </div>
+                <div class="plan">
+                    <h3>45 Minutes</h3>
+                    <p>₹199</p>
+                    <button onclick="selectPlan(45, 199)">Select</button>
+                </div>
+            </div>
+            <button onclick="window.location.href='dashboard.html'">Back to Dashboard</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

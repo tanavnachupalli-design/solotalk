@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talkora - Thank You</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="thank-you-bg">
+    <div class="container">
+        <div class="section">
+            <h1>THANK YOU MY AGENT WILL CONTACT YOU SOON</h1>
+            <button onclick="window.location.href='dashboard.html'">Return to Dashboard</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

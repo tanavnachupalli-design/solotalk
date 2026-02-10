@@ -1,0 +1,122 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #333;
+    transition: all 0.3s ease;
+}
+.thank-you-bg {
+    background: #ff0000 !important; /* Red background for thank-you page */
+    color: white !important;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+}
+.section {
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+h1 {
+    text-align: center;
+    color: #ff6b6b;
+    margin-bottom: 20px;
+}
+input {
+    padding: 15px;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid #74b9ff;
+    font-size: 16px;
+}
+button {
+    background: linear-gradient(45deg, #ff6b6b, #feca57);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 10px 5px;
+    transition: transform 0.2s ease;
+}
+button:hover {
+    transform: scale(1.05);
+}
+.pricing {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+.plan {
+    border: 2px solid #ff6b6b;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 200px;
+    background: linear-gradient(135deg, #ffeaa7, #fab1a0);
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+}
+.plan:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.payment {
+    text-align: center;
+    margin: 20px 0;
+}
+.payment img {
+    margin: 10px 0;
+    border-radius: 10px;
+}
+.book-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+header {
+    position: relative;
+}
+.disclaimer {
+    background: #fff3cd;
+    padding: 10px;
+    border: 1px solid #ffeaa7;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    .section {
+        padding: 20px;
+    }
+    .pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+    .plan {
+        width: 100%;
+        max-width: 300px;
+    }
+    .book-btn {
+        position: static;
+        display: block;
+        margin: 20px auto;
+    }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talkora - Payment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <h1>Payment</h1>
+            <p>Selected Plan: <span id="selectedPlan"></span></p>
+            <p>Amount: ₹<span id="selectedAmount"></span></p>
+            <div class="payment">
+                <h3>Pay Now</h3>
+                <p>UPI Number: 8125022563</p>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=upi://pay?pa=8125022563@upi&pn=Talkora&am=0&cu=INR" alt="UPI QR Code">
+                <button onclick="window.location.href='confirmation.html'">Done</button>
+            </div>
+            <button onclick="window.location.href='booking.html'">Back</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('selectedPlan').textContent = localStorage.getItem('selectedPlan') || 'None';
+        document.getElementById('selectedAmount').textContent = localStorage.getItem('selectedAmount') || '0';
+    </script>
+</body>
+</html>

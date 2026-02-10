@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Payment Confirmation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Payment Confirmation</h1>
+
+  <p>Please upload the screenshot of your payment and enter the Google Meeting link or number:</p>
+
+  <!-- Upload screenshot -->
+  <label>Upload Payment Screenshot:</label>
+  <input type="file" accept="image/*">
+
+  <!-- Google Meeting / Number input -->
+  <label>Enter Google Meeting link or number:</label>
+  <input type="text" placeholder="Meeting link or number">
+
+  <!-- Disclaimer -->
+  <p style="color:red; font-weight:bold;">
+    Disclaimer: No cheating, sharing, or recording the calls. Calls in bad behavior will end and never be connected again.
+  </p>
+
+  <!-- Submit button -->
+  <a href="thank-you.html"><button>Submit</button></a>
+
+  <script src="script.js"></script>
+</body>
+</html>

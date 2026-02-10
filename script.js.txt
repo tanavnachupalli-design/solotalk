@@ -1,0 +1,30 @@
+function login() {
+    const email = document.getElementById('emailInput').value;
+    const phone = document.getElementById('phoneInput').value;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const phoneRegex = /^\+91\d{10}$/;
+    if (emailRegex.test(email) && phoneRegex.test(phone)) {
+        localStorage.setItem('email', email);
+        localStorage.setItem('phone', phone);
+        window.location.href = 'dashboard.html';
+    } else {
+        alert('Please enter a valid email and phone number.');
+    }
+}
+
+function selectPlan(duration, price) {
+    localStorage.setItem('selectedPlan', `${duration} Minutes`);
+    localStorage.setItem('selectedAmount', price);
+    window.location.href = 'payment.html';
+}
+
+function submitConfirmation() {
+    const screenshot = document.getElementById('screenshotInput').files[0];
+    const meetingCode = document.getElementById('meetingCodeInput').value;
+    if (screenshot && meetingCode) {
+        alert('Confirmation submitted! (Mock: File and code saved.)');
+        window.location.href = 'thank-you.html';
+    } else {
+        alert('Please upload a screenshot and enter a meeting code.');
+    }
+}
